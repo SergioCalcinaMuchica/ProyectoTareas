@@ -22,11 +22,11 @@ public class GestorTareas {
                     System.out.print("Escribe la nueva tarea: ");
                     String tarea = scanner.nextLine();
                     tareas.add(tarea);
-                    System.out.println("✅ Tarea agregada.");
+                    System.out.println("Tarea agregada.");
                     break;
 
                 case 2:
-                    System.out.println("\n📋 Tareas pendientes:");
+                    System.out.println("\nTareas pendientes:");
                     if (tareas.isEmpty()) {
                         System.out.println("No hay tareas.");
                     } else {
@@ -44,7 +44,7 @@ public class GestorTareas {
                         int num = scanner.nextInt();
                         if (num > 0 && num <= tareas.size()) {
                             tareas.remove(num - 1);
-                            System.out.println("❌ Tarea eliminada.");
+                            System.out.println("Tarea eliminada.");
                         } else {
                             System.out.println("Número inválido.");
                         }
@@ -52,7 +52,7 @@ public class GestorTareas {
                     break;
 
                 case 4:
-                    System.out.println("Saliendo... 👋");
+                    System.out.println("Saliendo...");
                     break;
 
                 default:
